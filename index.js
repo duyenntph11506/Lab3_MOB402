@@ -54,5 +54,5 @@ http.createServer(function (request, response){
     }else{
         response.end("404 not found");
     }
-    
-}).listen(8080);
+
+}).listen(process.env.PORT || '8080')
